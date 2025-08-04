@@ -69,6 +69,7 @@ public class RequestPostServlet extends HttpServlet {
 		// 단, 응답화면(jsp)에서 필요로 하는 데이터들을 주섬주섬 담아서 전달해줘야됨
 		// 주섬주섬 담기 위한 공간 == request attribute 영역 (키-벨류 세트로)
 		// request.setAttribute("키", 벨류(object형));
+		// setAttribute(String name, Object o);
 		request.setAttribute("name", name);
 		request.setAttribute("age", age);
 		request.setAttribute("city", city);

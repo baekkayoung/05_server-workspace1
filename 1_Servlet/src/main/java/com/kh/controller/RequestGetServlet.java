@@ -34,7 +34,6 @@ public class RequestGetServlet extends HttpServlet {
 		// get방식으로 요청을 하면 doGet 메소드가 저절로 호출됨
 		
 		/*
-		 * 
 		 * 첫번째 매개변수 request에는 요청시 전달된 내용들이 담겨있음(사용자가 입력한 값, 요청 전송 방식, 요청자의 ip주소, 등등 요청하는 것)
 		 * 두번째 매개변수 response에는 요청 처리 후 응답할 때 사용되는 객체
 		 * 
