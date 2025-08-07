@@ -83,6 +83,8 @@ public class RequestPostServlet extends HttpServlet {
 		// 응답하고자 하는 뷰(jsp)를 선택하면서 RequestDispatcher 객체 생성
 		RequestDispatcher view = request.getRequestDispatcher("views/responsePage.jsp");
 		view.forward(request, response); // 포워딩
+//		request.getRequestDispatcher("views/responsePage.jsp").view.forward(request, response);
+		
 		
 		
 		

@@ -45,7 +45,6 @@ public class PizzaServlet extends HttpServlet {
 		String phone = request.getParameter("phone"); // "01011112222" | 
 		String address = request.getParameter("address"); // "서울시 강남구" |
 		String message = request.getParameter("message"); // "메세지" | ""
-		
 		String pizza = request.getParameter("pizza"); // "콤비네이션피자" | "선택피자" 
 		String[] toppings = request.getParameterValues("topping"); // ["고구마무스","피자바이트"] | NULL
 		String[] sides = request.getParameterValues("side"); // ["콜라", "사이다"] | NU
@@ -71,7 +70,6 @@ public class PizzaServlet extends HttpServlet {
 				case "콘크림무스" : price +=1500; break;
 				case "파인애플토핑" : 
 				case "치즈토핑" : price += 2000; break;
-				
 				case "치즈바이트" :
 				case "치즈크러스트" : price +=3000; break;
 				}
@@ -98,8 +96,8 @@ public class PizzaServlet extends HttpServlet {
 	// 단, 응답페이지에서 필요한 데이터가 있다면 담아서 포워딩 할 것
 	// request의 attribute 영역에 담기
 		
-	request.setAttribute("userNaem", userName);
-	request.setAttribute("phone", phone);
+	request.setAttribute("userName", userName); // 여기서 "userName" 은 JSP에서 꺼낼 때 쓸 **키(이름)**이고,
+	request.setAttribute("phone", phone); // userName 은 아까 서블릿에서 받아서 저장한 사용자 입력 값(String 변수)
 	request.setAttribute("address", address);
 	request.setAttribute("message", message);
 	request.setAttribute("pizza", pizza);

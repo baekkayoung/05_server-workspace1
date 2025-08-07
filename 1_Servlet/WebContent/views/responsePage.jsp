@@ -15,7 +15,7 @@
 </style>
 </head>
 <body>
-	<%	
+<%	
 		// request는 jsp를 포워딩하면 내장되어있어서 쓸 수 있음
 		// 스크립틀릿 == html 문서 내에 바코드를 쓸 수 있는 영역
 		// request.getAttribute("키") : 벨류 => servlet에서 반환형 object니까
@@ -26,7 +26,7 @@
 		double height = (double)request.getAttribute("height");
 		String gender = (String)request.getAttribute("gender");
 		String[] foods = (String[])request.getAttribute("foods");
-	%>
+%>
 	
 	
 	<h2>개인정보응답화면 - POST</h2>

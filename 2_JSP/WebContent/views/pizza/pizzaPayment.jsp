@@ -6,15 +6,12 @@
     	String phone = (String)request.getAttribute("phone");
     	String address = (String)request.getAttribute("address");
     	String message = (String)request.getAttribute("message");
-    	
     	String pizza = (String)request.getAttribute("pizza");
     	String[] toppings = (String[])request.getAttribute("toppings");
     	String[] sides = (String[])request.getAttribute("sides");
     	String payment = (String)request.getAttribute("payment");
     	int price = (int)request.getAttribute("price");
     	
- 
-    
     %>
 <!DOCTYPE html>
 <html>
