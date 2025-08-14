@@ -46,6 +46,7 @@
 			</table>
 		</fieldset>
 		<br>
+		
 		<fieldset>
 			<legend>주문정보</legend>
 
@@ -81,7 +82,7 @@
 				</tr>
 				<tr>
 					<th>결제방식</th>
-					<td><input type="radio" name="payment" value="card" checked>카드결제 
+					<td><input type="radio" name="payment" value="card" checked> 카드결제 
 						<input type="radio" name="payment" value="cash"> 현금결제
 					</td>
 				</tr>

@@ -32,7 +32,7 @@ public class PizzaServlet extends HttpServlet {
 //		System.out.println("잘");
 		
 		// 1) 전달값 중에 한글이 있을 경우 인코딩 처리 (post 방식일때만)
-//		request.setCharacterEncoding("utf-8");
+		//		request.setCharacterEncoding("utf-8");
 		
 		// 2) 요청시 전달값 뽑기 및 데이터가공처리(파싱같은거) => 변수 및 객체 기록
 		//    request.getParameter("키") : 벨류값(String)
